@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class pesosAbolivares {
 
     double pesos = 0;
@@ -8,11 +10,11 @@ public class pesosAbolivares {
         // TODO Auto-generated constructor stub
 
         JOptionPane.showMessageDialog(null, "Convertidor de Pesos a Bolivares");
-        pesos = JOptionPane.showInputDialog("Porfavor ingreses el valor en pesos: ");
+        pesos = Double.parseDouble(JOptionPane.showInputDialog("Porfavor ingreses el valor en pesos: "));
 
         bolivares = pesos * valorBol;
 
-        JptionPane.showMessageDialog(null, pesos + " pesos, equivalen a " + bolivares + " bolivares");
+        JOptionPane.showMessageDialog(null, pesos + " pesos, equivalen a " + bolivares + " bolivares");
 
     }
 
